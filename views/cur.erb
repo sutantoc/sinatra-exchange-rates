@@ -1,0 +1,11 @@
+<h1>Convert <%= @cur %></h1>
+Go <a href="/">back</a>.
+
+<ul>
+<% @currency_array.each do |each_CUR| %>
+  <li>
+   <a href="/<%= @cur %>/<%=each_CUR%>">Convert 1 <%= @cur %> to <%= each_CUR%>...</a>
+  </li>
+<% end %>
+</ul>
+
