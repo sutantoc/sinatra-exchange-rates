@@ -1,0 +1,8 @@
+<h1>Currency pairs</h1>
+<ul>
+<% @currency_array.each do |each_CUR| %>
+  <li>
+   <a href="/<%= each_CUR %>">Convert 1 <%= each_CUR %> to...</a>
+  </li>
+<% end %>
+</ul>
